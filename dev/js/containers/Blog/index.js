@@ -1,0 +1,46 @@
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import PageHead from '../../components/PageHead';
+import _Blog from './_Blog';
+import BlogArticle from './BlogArticle';
+import ArticleImg from './ArticleImg';
+import ArticleContent from './ArticleContent';
+
+class Blog extends Component {
+
+  blogArticles() {
+    return this.props.blogarticles.map( blog => {
+      return (
+        <BlogArticle key={blog.id}>
+          <ArticleImg>
+            <img src={blog.img}/>
+          </ArticleImg>
+          <ArticleContent>
+            <h3>{blog.name}</h3>
+            <p>{blog.short}</p>
+          </ArticleContent>
+        </BlogArticle>
+      );
+    });
+  }
+
+  render() {
+    return (
+      <_Blog>
+        <PageHead>
+          <h3>Blog</h3>
+        </PageHead>
+        {this.blogArticles()}
+      </_Blog>
+    );
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    blogarticles: state.blogarticles,
+  };
+}
+
+
+export default connect(mapStateToProps)(Blog);

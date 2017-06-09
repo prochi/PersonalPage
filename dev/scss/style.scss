@@ -1,0 +1,40 @@
+@import './opensans.scss';
+@import './animation.scss';
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #d9dbdd;
+  color: #333;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+
+div {
+  display: block;
+}
+
+a {
+  background: transparent;
+  color: #428bca;
+  cursor: auto;
+  text-decoration: none;
+}
+
+p {
+  color: #828282;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0 0 10px;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}

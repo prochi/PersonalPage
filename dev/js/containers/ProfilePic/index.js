@@ -1,13 +1,13 @@
 import React from 'react';
-import _ProfilePic from './_ProfilePic';
-import _PicBg from './_PicBg';
+import ProfilePicContainer from './ProfilePicContainer';
+import PicBgContainer from './PicBgContainer';
 
 const ProfilePic = () => (
-  <_ProfilePic>
-    <_PicBg>
+  <ProfilePicContainer>
+    <PicBgContainer>
       <img src="../img/profileavatar.png"/>
-    </_PicBg>
-  </_ProfilePic>
+    </PicBgContainer>
+  </ProfilePicContainer>
 );
 
 export default ProfilePic;

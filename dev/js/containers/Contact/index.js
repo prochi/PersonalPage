@@ -1,13 +1,13 @@
 import React from 'react';
 import PageHead from '../../components/PageHead';
-import _Contact from './_Contact';
+import ContactContainer from './ContactContainer';
 
 const Contact = () => (
-  <_Contact>
+  <ContactContainer>
     <PageHead>
       <h3>Contact</h3>
     </PageHead>
-  </_Contact>
+  </ContactContainer>
 );
 
 export default Contact;

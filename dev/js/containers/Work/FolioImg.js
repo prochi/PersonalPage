@@ -9,12 +9,18 @@ const FolioImg = styled.div`
     width: 100%;
   }
 
-  & div {
+  div {
     visibility: hidden;
   }
 
-  &:hover div {
-    visibility: visible;
+  &:hover {
+    div {
+      visibility: visible;
+    }
+    &:before {
+      opacity: 0.8;
+      transition: all .3s ease-in-out;
+    }
   }
 
   &:before {
@@ -27,14 +33,10 @@ const FolioImg = styled.div`
     right: 0px;
     top: 0px;
     transition: all .3s ease-in-out;
-    
     width: 100%;
   }
 
-  &:hover:before {
-    opacity: 0.8;
-    transition: all .3s ease-in-out;
-  }
+  
 
 `;
 

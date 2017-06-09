@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ResumeInfo = styled.div`
   animation: slideInLeft 1s;
 
-  & h4 {
+  h4 {
     color: #2c383c;
     font-size: 24px;
     font-weight: 300;
@@ -11,13 +11,13 @@ const ResumeInfo = styled.div`
     margin-top: 20px;
   }
 
-  & h5 {
+  h5 {
     color: #2c383c;
     font-size: 16px;
     font-weight: bold;
   }
 
-  & p {
+  p {
     margin: 0px;
     color: #828282;
     font-size: 15px;
@@ -25,20 +25,20 @@ const ResumeInfo = styled.div`
     margin-top: 5px;
   }
 
-  & span {
+  span {
     color: #2c383c;
   }
 
-  & ul {
+  ul {
     margin-top: -15px;
     padding: 0px;
-  }
 
-  & ul li {
-    border-bottom: 1px solid #ededed;
-    list-style: none;
-    margin: 0px;
-    padding: 15px 0 20px;
+    & li {
+      border-bottom: 1px solid #ededed;
+      list-style: none;
+      margin: 0px;
+      padding: 15px 0 20px;
+    }
   }
 
 `;

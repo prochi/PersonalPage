@@ -1,11 +1,11 @@
 import React from 'react';
-import _Copyright from './_Copyright';
+import CopyrightContainer from './CopyrightContainer';
 import P from './P';
 
 const Copyright = () => (
-  <_Copyright>
+  <CopyrightContainer>
     <P>© 2017 Frantisek Voprsalek. All Rights Reserved</P>
-  </_Copyright>
+  </CopyrightContainer>
 );
 
 export default Copyright;

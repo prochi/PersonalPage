@@ -1,17 +1,17 @@
 import React from 'react';
 import UL from './UL';
 import LI from './LI';
-import _Social from './_Social';
+import SocialContainer from './SocialContainer';
 
 const Social = () => (
-  <_Social>
+  <SocialContainer>
     <UL>
       <LI><a href="#">f</a></LI>
       <LI><a href="#">t</a></LI>
       <LI><a href="#">d</a></LI>
       <LI><a href="#">p</a></LI>
     </UL>
-  </_Social>
+  </SocialContainer>
 );
 
 export default Social;

@@ -14,6 +14,10 @@ const LI = styled.li`
     position: relative;
     text-align: right;
     width: 100%;
+
+    &:hover { 
+      color: #2c383c !important;
+    };
   }
 
   &:before {
@@ -31,10 +35,6 @@ const LI = styled.li`
     left: 0;
     transition: all .3s ease-in-out;
   }
-
-  a:hover { 
-    color: #2c383c !important;
-  };
 
 `;
 

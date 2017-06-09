@@ -7,7 +7,7 @@ const SkillsBg = styled.div`
   position: relative;
   width: 100%;
 
-  & span {
+  span {
     background: #ffd42d;
   }
   

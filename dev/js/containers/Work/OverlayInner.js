@@ -9,14 +9,13 @@ const OverlayInner = styled.div`
   right: 0px;
   top: 0px;
 
-  & h4 {
+  h4 {
     color: #2c383c;
     font-size: 14px;
     font-weight: bold;
     margin: 0px 0 -3px;
   }
-
-  & p {
+  p {
     color: #2c383c;
     font-size: 11px;
     font-style: italic;

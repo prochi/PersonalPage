@@ -6,7 +6,7 @@ const UlPortfolio = styled.ul`
   text-align: center;
   width: 100%;
 
-  & li {
+  li {
     animation: flipInX 1s both;
     color: #fff;
     display: inline-block;
@@ -17,13 +17,13 @@ const UlPortfolio = styled.ul`
     text-align: center;
     vertical-align: top;
     width: 33.3333%;
-  }
 
-  & li a{
-    background: #fff;
-    display: block;
-    max-width: 100%;
-    text-decoration: none;
+    a {
+      background: #fff;
+      display: block;
+      max-width: 100%;
+      text-decoration: none;
+    }
   }
 
 `;

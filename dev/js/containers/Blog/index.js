@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import PageHead from '../../components/PageHead';
-import _Blog from './_Blog';
+import BlogContainer from './BlogContainer';
 import BlogArticle from './BlogArticle';
 import ArticleImg from './ArticleImg';
 import ArticleContent from './ArticleContent';
@@ -13,7 +13,7 @@ class Blog extends Component {
       return (
         <BlogArticle key={blog.id}>
           <ArticleImg>
-            <img src={blog.img}/>
+            <img src={blog.img} />
           </ArticleImg>
           <ArticleContent>
             <h3>{blog.name}</h3>
@@ -26,12 +26,12 @@ class Blog extends Component {
 
   render() {
     return (
-      <_Blog>
+      <BlogContainer>
         <PageHead>
           <h3>Blog</h3>
         </PageHead>
         {this.blogArticles()}
-      </_Blog>
+      </BlogContainer>
     );
   }
 }

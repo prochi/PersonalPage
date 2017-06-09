@@ -6,7 +6,7 @@ const UlFilter = styled.ul`
   padding: 0px;
   width: 100%;
 
-  & li {
+  li {
     color: #b1b1b1;
     cursor: pointer;
     display: inline-block;

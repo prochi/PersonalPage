@@ -3,6 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import { selectCategory } from '../../actions/index';
 import UlFilter from './UlFilter';
+import classnames from 'classnames'
 
 class CategoryList extends Component {
 
@@ -12,6 +13,7 @@ class CategoryList extends Component {
         <li 
           key={category.id}
           onClick={() => this.props.selectCategory(category)}
+          className={classnames({'active': category.name === this.props.activeCategory.name})}   
         >
           {category.name}
         </li>
@@ -30,7 +32,8 @@ class CategoryList extends Component {
 
 function mapStateToProps(state) {
   return {
-     workcategory: state.workcategory,
+    activeCategory: state.activeCategory,
+    workcategory: state.workcategory,
   };
 }
 

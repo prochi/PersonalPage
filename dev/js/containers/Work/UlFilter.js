@@ -15,13 +15,13 @@ const UlFilter = styled.ul`
     margin: 0px;
     padding: 0px 15px;
     width: auto;
+
+    &:hover, &.active {
+      color: #2c383c;
+      background: #ffd42d;
+    }
   };
 
-  & li:hover {
-    color: #2c383c;
-    background: #ffd42d;
-  }
-  
 `;
 
 export default UlFilter;

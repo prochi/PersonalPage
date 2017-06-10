@@ -5,3 +5,11 @@ export const selectCategory = (category) => {
     payload: category
   }
 };
+
+export const selectPage = (page) => {
+  console.log(page.name);
+  return {
+    type: "PAGE_SELECTED",
+    payload: page
+  }
+};

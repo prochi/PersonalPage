@@ -31,9 +31,13 @@ const LI = styled.li`
     content: ' ';
   }
 
-  &:hover:before {
+  &.active:before, &:hover:before {
     left: 0;
     transition: all .3s ease-in-out;
+  }
+
+   &.active a {
+    color: #2c383c !important;
   }
 
 `;

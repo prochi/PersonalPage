@@ -7,6 +7,8 @@ import SkillsReducer from './reducer-skills';
 import ServicesReducer from './reducer-services';
 import WorkCategory from './reducer-work-category';
 import ActiveCategoryReducer from './reducer-work-activecategory';
+import ActivePageReducer from './reducer-activepage';
+import PagesReducer from './reducer-pages';
 
 const allReducers = combineReducers({
   blogarticles: BlogReducer,
@@ -15,9 +17,11 @@ const allReducers = combineReducers({
   portfoliolist: PortfolioReducer,
   skillslist: SkillsReducer,
   serviceslist: ServicesReducer,
-  
+  pagesList: PagesReducer,
   workcategory: WorkCategory,
+  activePage: ActivePageReducer,
   activeCategory: ActiveCategoryReducer,
+  
 });
 
 export default allReducers

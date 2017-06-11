@@ -21,7 +21,6 @@ const allReducers = combineReducers({
   workcategory: WorkCategory,
   activePage: ActivePageReducer,
   activeCategory: ActiveCategoryReducer,
-  
 });
 
 export default allReducers
